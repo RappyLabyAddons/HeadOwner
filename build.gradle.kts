@@ -15,7 +15,7 @@ labyMod {
         namespace = "headowner"
         displayName = "Head Owner"
         author = "RappyTV"
-        description = "Shows the owner of the head you're looking at"
+        description = "Shows the owner or head type of the head you're looking at"
         minecraftVersion = "1.8<1.20.1"
         version = System.getenv().getOrDefault("VERSION", "1.0.0")
     }
