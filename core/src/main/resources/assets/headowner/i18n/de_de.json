@@ -1,0 +1,36 @@
+{
+    "headowner": {
+        "settings": {
+            "name": "Head Owner",
+            "enabled": {
+                "name": "Aktiviert"
+            },
+            "distance": {
+                "name": "Reichweite"
+            },
+            "copyKey": {
+                "name": "Kopiertaste"
+            }
+        },
+        "hudWidget": {
+            "headowner": {
+                "name": "Head Owner"
+            }
+        },
+        "types": {
+            "skeleton": "Skelettschädel",
+            "wither_skeleton": "Witherskelettschädel",
+            "zombie": "Zombiekopf",
+            "player": "Spielerkopf",
+            "creeper": "Creeperkopf",
+            "dragon": "Drachenkopf"
+        },
+        "messages": {
+            "copyFormat": "Kopf Typ: %s, Spielername: %s, UUID: %s, Texturenwert: %s",
+            "copied": "§aDie Skull-Daten wurden in deine Zwischenablage gespeichert!",
+            "unknown": "Unbekannt",
+            "unknownHead": "Unbekannter Kopf (wurde per Texturenwert erstellt)",
+            "unknownHeadKey": "Unbekannter Kopf (wurde per Texturenwert erstellt, drücke %s um Daten zu kopieren)"
+        }
+    }
+}
