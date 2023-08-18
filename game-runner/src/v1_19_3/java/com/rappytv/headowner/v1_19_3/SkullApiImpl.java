@@ -7,6 +7,7 @@ import com.rappytv.headowner.config.HeadOwnerConfig;
 import java.util.UUID;
 import net.labymod.api.client.gui.screen.key.Key;
 import net.labymod.api.models.Implements;
+import net.labymod.api.util.I18n;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.SkullBlock;
 import net.minecraft.world.level.block.SkullBlock.Types;
@@ -93,12 +94,12 @@ public class SkullApiImpl implements ISkullApi {
         private String getSkullTypeName() {
             if(this.type == null) return null;
             return switch (this.type) {
-                case SKELETON -> "Skeleton Skull";
-                case WITHER_SKELETON -> "Wither Skeleton Skull";
-                case ZOMBIE -> "Zombie Head";
-                case PLAYER -> "Player Head";
-                case CREEPER -> "Creeper Head";
-                case DRAGON -> "Dragon Head";
+                case SKELETON -> I18n.translate("headowner.types.skeleton");
+                case WITHER_SKELETON -> I18n.translate("headowner.types.wither_skeleton");
+                case ZOMBIE -> I18n.translate("headowner.types.zombie");
+                case PLAYER -> I18n.translate("headowner.types.player");
+                case CREEPER -> I18n.translate("headowner.types.creeper");
+                case DRAGON -> I18n.translate("headowner.types.dragon");
                 default -> null;
             };
         }

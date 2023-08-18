@@ -17,6 +17,14 @@
                 "name": "Head Owner"
             }
         },
+        "types": {
+            "skeleton": "Skeleton Skull",
+            "wither_skeleton": "Wither Skeleton Skull",
+            "zombie": "Zombie Head",
+            "player": "Player Head",
+            "creeper": "Creeper Head",
+            "dragon": "Dragon Head"
+        },
         "messages": {
             "copied": "§aThe skull data was copied to your clipboard!"
         }
