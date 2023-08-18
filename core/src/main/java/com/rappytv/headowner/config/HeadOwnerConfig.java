@@ -22,10 +22,10 @@ public class HeadOwnerConfig extends AddonConfig {
     public ConfigProperty<Boolean> enabled() {
         return enabled;
     }
-    public ConfigProperty<Integer> distance() {
-        return distance;
+    public int distance() {
+        return distance.get();
     }
-    public ConfigProperty<Key> copyKey() {
-        return copyKey;
+    public Key copyKey() {
+        return copyKey.get();
     }
 }

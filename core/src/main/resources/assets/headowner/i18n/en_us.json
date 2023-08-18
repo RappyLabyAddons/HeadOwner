@@ -11,6 +11,14 @@
             "copyKey": {
                 "name": "Copy Key"
             }
+        },
+        "hudWidget": {
+            "headowner": {
+                "name": "Head Owner"
+            }
+        },
+        "messages": {
+            "copied": "§aThe skull data was copied to your clipboard!"
         }
     }
 }
