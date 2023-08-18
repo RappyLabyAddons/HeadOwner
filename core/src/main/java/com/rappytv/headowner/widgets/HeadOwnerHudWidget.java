@@ -29,7 +29,8 @@ public class HeadOwnerHudWidget extends TextHudWidget<TextHudWidgetConfig> {
     @Override
     public void onTick(boolean isEditorContext) {
         String newName = isEditorContext ? Laby.labyAPI().getName() : addon.getSkullApi().getDisplay(addon.configuration());
-        if(name.equals(newName)) return;
+        if(name != null && name.equals(newName)) return;
+        name = newName;
 
         this.line.updateAndFlush(name);
     }
