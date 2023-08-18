@@ -16,7 +16,7 @@ labyMod {
         displayName = "Head Owner"
         author = "RappyTV"
         description = "Shows the owner of the head you're looking at"
-        minecraftVersion = "*"
+        minecraftVersion = "1.16<1.20.1"
         version = System.getenv().getOrDefault("VERSION", "1.0.0")
     }
 
