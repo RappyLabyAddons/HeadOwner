@@ -74,22 +74,22 @@ public class SkullApiImpl implements ISkullApi {
 
             if(this.value != null) {
                 if(key != Key.NONE)
-                    return "Unknown Head (created by texture value, press " + key.getName() + " to copy skull data)";
+                    return I18n.translate("headowner.messages.unknownHeadKey", key.getName());
 
-                return "Unknown Head (created by texture value)";
+                return I18n.translate("headowner.messages.unknownHead");
             }
 
             return getSkullTypeName();
         }
 
         public String getCopy() {
-            String uuid = this.uuid == null ? "Unknown" : this.uuid.toString();
-            String username = this.username == null ? "Unknown" : this.username;
-            String value = this.value == null ? "Unknown" : this.value;
+            String uuid = this.uuid == null ? I18n.translate("headowner.messages.unknown") : this.uuid.toString();
+            String username = this.username == null ? I18n.translate("headowner.messages.unknown") : this.username;
+            String value = this.value == null ? I18n.translate("headowner.messages.unknown") : this.value;
             String type = getSkullTypeName();
 
 
-            return String.format("Skull type: %s, Username: %s, UUID: %s, Texture value: %s", type, username, uuid, value);
+            return I18n.translate("headowner.messages.copyFormat", type, username, uuid, value);
         }
 
         private String getSkullTypeName() {

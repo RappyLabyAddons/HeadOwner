@@ -26,7 +26,11 @@
             "dragon": "Dragon Head"
         },
         "messages": {
-            "copied": "§aThe skull data was copied to your clipboard!"
+            "copyFormat": "Skull type: %s, Username: %s, UUID: %s, Texture value: %s",
+            "copied": "§aThe skull data was copied to your clipboard!",
+            "unknown": "Unknown",
+            "unknownHead": "Unknown Head (created by texture value)",
+            "unknownHeadKey": "Unknown Head (created by texture value, press %s to copy skull data)"
         }
     }
 }
