@@ -17,7 +17,7 @@ labyMod {
         author = "RappyTV"
         description = "Shows the owner or head type of the head you're looking at"
         minecraftVersion = "1.8<1.20.1"
-        version = System.getenv().getOrDefault("VERSION", "1.0.0")
+        version = System.getenv().getOrDefault("VERSION", "1.0.1")
     }
 
     minecraft {

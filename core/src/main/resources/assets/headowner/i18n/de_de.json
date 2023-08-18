@@ -27,7 +27,7 @@
         },
         "messages": {
             "copyFormat": "Kopf Typ: %s, Spielername: %s, UUID: %s, Texturenwert: %s",
-            "copied": "§aDie Skull-Daten wurden in deine Zwischenablage gespeichert!",
+            "copied": "Die Skull-Daten wurden in deine Zwischenablage gespeichert!",
             "unknown": "Unbekannt",
             "unknownHead": "Unbekannter Kopf (wurde per Texturenwert erstellt)",
             "unknownHeadKey": "Unbekannter Kopf (wurde per Texturenwert erstellt, drücke %s um Daten zu kopieren)"

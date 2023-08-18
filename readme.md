@@ -4,7 +4,7 @@ Shows the owner or head type of the head you're looking at
 ### Installation
 1. Press `Win` + `R`
 2. Paste this into the window that popped up: `%appdata%/.minecraft/LabyMod-neo/addons` and press enter
-3. It should open your Labymod addon directory; Paste the [HeadOwner.jar](https://github.com/RappyLabyAddons/HeadOwner/releases/download/v1.0.0/HeadOwner.jar) in there.
+3. It should open your Labymod addon directory; Paste the [HeadOwner.jar](https://github.com/RappyLabyAddons/HeadOwner/releases/download/v1.0.1/HeadOwner.jar) in there.
 4. Launch your Labymod client.
 
 If you have any problems with the addon/have update ideas, feel free to
