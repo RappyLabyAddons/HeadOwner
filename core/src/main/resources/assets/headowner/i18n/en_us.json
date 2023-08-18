@@ -1,0 +1,16 @@
+{
+    "headowner": {
+        "settings": {
+            "name": "Head Owner",
+            "enabled": {
+                "name": "Enabled"
+            },
+            "distance": {
+                "name": "Distance"
+            },
+            "copyKey": {
+                "name": "Copy Key"
+            }
+        }
+    }
+}
