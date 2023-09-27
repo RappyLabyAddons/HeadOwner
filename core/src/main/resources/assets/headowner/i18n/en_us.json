@@ -23,7 +23,8 @@
             "zombie": "Zombie Head",
             "player": "Player Head",
             "creeper": "Creeper Head",
-            "dragon": "Dragon Head"
+            "dragon": "Dragon Head",
+            "piglin": "Piglin Head"
         },
         "messages": {
             "copyFormat": "Skull type: %s, Username: %s, UUID: %s, Texture value: %s",
