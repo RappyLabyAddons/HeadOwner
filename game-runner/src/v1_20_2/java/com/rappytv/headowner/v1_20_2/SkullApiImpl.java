@@ -1,9 +1,10 @@
-package com.rappytv.headowner.v1_20_1;
+package com.rappytv.headowner.v1_20_2;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
 import com.rappytv.headowner.api.ISkullApi;
 import com.rappytv.headowner.config.HeadOwnerConfig;
+import java.util.UUID;
 import net.labymod.api.client.gui.screen.key.Key;
 import net.labymod.api.models.Implements;
 import net.labymod.api.util.I18n;
@@ -14,8 +15,6 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.SkullBlockEntity;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-
-import java.util.UUID;
 
 @Implements(ISkullApi.class)
 public class SkullApiImpl implements ISkullApi {
@@ -49,7 +48,7 @@ public class SkullApiImpl implements ISkullApi {
                 this.uuid = owner.getId();
 
                 for (Property property : owner.getProperties().get("textures"))
-                    this.value = property.getValue();
+                    this.value = property.value();
             }
         }
 
