@@ -100,7 +100,7 @@ public class SkullApiImpl implements ISkullApi {
                 case PLAYER -> I18n.translate("headowner.types.player");
                 case CREEPER -> I18n.translate("headowner.types.creeper");
                 case DRAGON -> I18n.translate("headowner.types.dragon");
-                default -> null;
+                case PIGLIN -> I18n.translate("headowner.types.piglin");
             };
         }
     }
