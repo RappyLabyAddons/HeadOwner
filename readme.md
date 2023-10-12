@@ -1,4 +1,5 @@
 # HeadOwner
+![Downloads](https://labybadges-delta.vercel.app/api/downloads/headowner/formatted)<br>
 Shows the owner or head type of the head you're looking at
 
 ### Installation
