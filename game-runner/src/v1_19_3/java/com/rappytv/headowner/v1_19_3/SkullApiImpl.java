@@ -87,7 +87,6 @@ public class SkullApiImpl implements ISkullApi {
             String value = this.value == null ? I18n.translate("headowner.messages.unknown") : this.value;
             String type = getSkullTypeName();
 
-
             return I18n.translate("headowner.messages.copyFormat", type, username, uuid, value);
         }
 
