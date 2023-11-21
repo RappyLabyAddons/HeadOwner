@@ -26,7 +26,9 @@ public class SkullApiImpl implements ISkullApi {
 
     @Override
     public String getCopy(HeadOwnerConfig config) {
-        return new Skull(Skull.getBlockLooking(config.distance())).getCopy();
+        Skull skull = new Skull(Skull.getBlockLooking(config.distance()));
+        if(skull.getSkullTypeName() == null) return null;
+        return skull.getCopy();
     }
 
     public static class Skull {

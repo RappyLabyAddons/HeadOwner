@@ -26,7 +26,9 @@ public class SkullApiImpl implements ISkullApi {
 
     @Override
     public String getCopy(HeadOwnerConfig config) {
-        return new Skull(Skull.getBlockLooking(config.distance())).getCopy();
+        Skull skull = new Skull(Skull.getBlockLooking(config.distance()));
+        if(skull.getSkullTypeName() == null) return null;
+        return skull.getCopy();
     }
 
     public static class Skull {
@@ -99,7 +101,7 @@ public class SkullApiImpl implements ISkullApi {
                 case PLAYER -> I18n.translate("headowner.types.player");
                 case CREEPER -> I18n.translate("headowner.types.creeper");
                 case DRAGON -> I18n.translate("headowner.types.dragon");
-                default -> null;
+                case PIGLIN -> I18n.translate("headowner.types.piglin");
             };
         }
     }
