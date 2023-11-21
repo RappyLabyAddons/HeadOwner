@@ -19,7 +19,12 @@ public class KeyListener {
     @Subscribe
     public void onKey(KeyEvent event) {
         if(event.state() == State.PRESS && event.key() == addon.configuration().copyKey() && !Laby.labyAPI().minecraft().minecraftWindow().isScreenOpened()) {
-            Laby.labyAPI().minecraft().setClipboard(addon.getSkullApi().getCopy(addon.configuration()));
+            String skulldata = addon.getSkullApi().getCopy(addon.configuration());
+            if(skulldata == null) {
+                Laby.references().chatExecutor().displayClientMessage(Component.translatable("headowner.messages.nothingToCopy", NamedTextColor.RED));
+                return;
+            }
+            Laby.labyAPI().minecraft().setClipboard(skulldata);
             Laby.references().chatExecutor().displayClientMessage(Component.translatable("headowner.messages.copied", NamedTextColor.GREEN));
         }
     }
