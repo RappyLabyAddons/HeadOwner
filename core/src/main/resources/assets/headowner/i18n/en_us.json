@@ -29,6 +29,7 @@
         "messages": {
             "copyFormat": "Skull type: %s, Username: %s, UUID: %s, Texture value: %s",
             "copied": "The skull data was copied to your clipboard!",
+            "nothingToCopy": "You're not looking at a valid skull!",
             "unknown": "Unknown",
             "unknownHead": "Unknown Head (created by texture value)",
             "unknownHeadKey": "Unknown Head (created by texture value, press %s to copy skull data)"

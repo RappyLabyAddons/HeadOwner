@@ -25,7 +25,9 @@ public class SkullApiImpl implements ISkullApi {
 
     @Override
     public String getCopy(HeadOwnerConfig config) {
-        return new Skull(Skull.getTileLooking(config.distance())).getCopy();
+        Skull skull = new Skull(Skull.getTileLooking(config.distance()));
+        if(skull.getSkullTypeName() == null) return null;
+        return skull.getCopy();
     }
 
     public static class Skull {
@@ -86,7 +88,6 @@ public class SkullApiImpl implements ISkullApi {
             String username = this.username == null ? I18n.translate("headowner.messages.unknown") : this.username;
             String value = this.value == null ? I18n.translate("headowner.messages.unknown") : this.value;
             String type = getSkullTypeName();
-
 
             return I18n.translate("headowner.messages.copyFormat", type, username, uuid, value);
         }
