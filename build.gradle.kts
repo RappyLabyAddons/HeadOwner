@@ -16,8 +16,8 @@ labyMod {
         displayName = "Head Owner"
         author = "RappyTV"
         description = "Shows the owner or head type of the head you're looking at"
-        minecraftVersion = "1.8<1.20.3"
-        version = System.getenv().getOrDefault("VERSION", "1.0.4")
+        minecraftVersion = "1.8<1.20.4"
+        version = System.getenv().getOrDefault("VERSION", "1.0.5")
     }
 
     minecraft {
@@ -32,7 +32,7 @@ labyMod {
                 "1.19.4",
                 "1.20.1",
                 "1.20.2",
-                "1.20.3"
+                "1.20.4"
         ) { version, provider ->
             configureRun(provider, version)
         }

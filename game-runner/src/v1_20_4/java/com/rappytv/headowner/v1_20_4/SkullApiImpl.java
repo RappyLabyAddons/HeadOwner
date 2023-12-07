@@ -1,4 +1,4 @@
-package com.rappytv.headowner.v1_20_3;
+package com.rappytv.headowner.v1_20_4;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
