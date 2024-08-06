@@ -1,7 +1,7 @@
 rootProject.name = "HeadOwner"
 
 pluginManagement {
-    val labyGradlePluginVersion = "0.3.38"
+    val labyGradlePluginVersion = "0.4.5"
     plugins {
         id("net.labymod.gradle") version (labyGradlePluginVersion)
     }
