@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.example"
-version = "1.0.0"
+version = System.getenv().getOrDefault("VERSION", "1.0.6")
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 
@@ -16,8 +16,8 @@ labyMod {
         displayName = "Head Owner"
         author = "RappyTV"
         description = "Shows the owner or head type of the head you're looking at"
-        minecraftVersion = "1.8<1.20.4"
-        version = System.getenv().getOrDefault("VERSION", "1.0.5")
+        minecraftVersion = "1.8<1.21"
+        version = getVersion().toString()
     }
 
     minecraft {
@@ -32,7 +32,10 @@ labyMod {
                 "1.19.4",
                 "1.20.1",
                 "1.20.2",
-                "1.20.4"
+                "1.20.4",
+                "1.20.5",
+                "1.20.6",
+                "1.21"
         ) { version, provider ->
             configureRun(provider, version)
         }
@@ -45,7 +48,7 @@ labyMod {
     }
 
     addonDev {
-        snapshotRelease()
+        productionRelease()
     }
 }
 
@@ -75,7 +78,7 @@ fun configureRun(provider: net.labymod.gradle.core.minecraft.provider.VersionPro
 
     provider.javaVersion = when (gameVersion) {
         else -> {
-            JavaVersion.VERSION_17
+            JavaVersion.VERSION_21
         }
     }
 
