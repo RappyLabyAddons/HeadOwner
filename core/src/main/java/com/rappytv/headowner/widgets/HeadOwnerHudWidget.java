@@ -1,22 +1,26 @@
 package com.rappytv.headowner.widgets;
 
 import com.rappytv.headowner.HeadOwnerAddon;
-import net.labymod.api.Laby;
 import net.labymod.api.client.gui.hud.binding.category.HudWidgetCategory;
 import net.labymod.api.client.gui.hud.hudwidget.text.TextHudWidget;
 import net.labymod.api.client.gui.hud.hudwidget.text.TextHudWidgetConfig;
 import net.labymod.api.client.gui.hud.hudwidget.text.TextLine;
+import net.labymod.api.client.gui.icon.Icon;
+import net.labymod.api.client.resources.ResourceLocation;
 
 public class HeadOwnerHudWidget extends TextHudWidget<TextHudWidgetConfig> {
 
     private final HeadOwnerAddon addon;
-    private String name;
+    private String name = "";
     private TextLine line;
 
     public HeadOwnerHudWidget(HeadOwnerAddon addon) {
         super("headowner");
         this.addon = addon;
-        this.name = Laby.labyAPI().getName();
+        this.setIcon(Icon.texture(ResourceLocation.create(
+            "headowner",
+            "textures/widget.png"
+        )));
         this.bindCategory(HudWidgetCategory.INGAME);
     }
 
@@ -37,6 +41,6 @@ public class HeadOwnerHudWidget extends TextHudWidget<TextHudWidgetConfig> {
 
     @Override
     public boolean isVisibleInGame() {
-        return name != null && super.isVisibleInGame();
+        return name != null && !name.isBlank() && super.isVisibleInGame();
     }
 }
