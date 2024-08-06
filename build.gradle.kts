@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.example"
-version = "1.0.0"
+version = System.getenv().getOrDefault("VERSION", "1.0.6")
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 
@@ -16,8 +16,8 @@ labyMod {
         displayName = "Head Owner"
         author = "RappyTV"
         description = "Shows the owner or head type of the head you're looking at"
-        minecraftVersion = "1.8<1.20.4"
-        version = System.getenv().getOrDefault("VERSION", "1.0.5")
+        minecraftVersion = "1.8<1.21"
+        version = getVersion().toString()
     }
 
     minecraft {
